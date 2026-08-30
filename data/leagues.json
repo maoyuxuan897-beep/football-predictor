@@ -1,0 +1,38 @@
+{
+  "欧冠": {
+    "key": "CL",
+    "country": "欧洲",
+    "avg_goals": 1.35,
+    "home_advantage": 0.3,
+    "draw_floor": 0.17,
+    "color": "#0b3d91",
+    "stats": { "shots": 13.0, "shots_on": 4.7, "corners": 5.3, "cards": 3.0, "possession": 50 }
+  },
+  "英超": {
+    "key": "EPL",
+    "country": "英格兰",
+    "avg_goals": 1.5,
+    "home_advantage": 0.3,
+    "draw_floor": 0.15,
+    "color": "#e02020",
+    "stats": { "shots": 13.4, "shots_on": 4.9, "corners": 5.6, "cards": 1.8, "possession": 50 }
+  },
+  "西甲": {
+    "key": "LaLiga",
+    "country": "西班牙",
+    "avg_goals": 1.35,
+    "home_advantage": 0.28,
+    "draw_floor": 0.15,
+    "color": "#f5a623",
+    "stats": { "shots": 13.1, "shots_on": 4.6, "corners": 5.1, "cards": 2.4, "possession": 50 }
+  },
+  "德甲": {
+    "key": "Bundesliga",
+    "country": "德国",
+    "avg_goals": 1.6,
+    "home_advantage": 0.25,
+    "draw_floor": 0.14,
+    "color": "#7f1d1d",
+    "stats": { "shots": 14.3, "shots_on": 5.1, "corners": 5.8, "cards": 1.7, "possession": 50 }
+  }
+}
