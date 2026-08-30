@@ -1,0 +1,612 @@
+{
+  "英超": {
+    "曼城": {
+      "elo": 2050,
+      "avg_goals": 2.1,
+      "avg_conceded": 0.9,
+      "abbr": "MCI"
+    },
+    "阿森纳": {
+      "elo": 2020,
+      "avg_goals": 2.0,
+      "avg_conceded": 0.8,
+      "abbr": "ARS"
+    },
+    "利物浦": {
+      "elo": 2010,
+      "avg_goals": 2.0,
+      "avg_conceded": 0.9,
+      "abbr": "LIV"
+    },
+    "切尔西": {
+      "elo": 1950,
+      "avg_goals": 1.9,
+      "avg_conceded": 1.1,
+      "abbr": "CHE"
+    },
+    "纽卡斯尔": {
+      "elo": 1900,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.1,
+      "abbr": "NEW"
+    },
+    "阿斯顿维拉": {
+      "elo": 1890,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.2,
+      "abbr": "AVL"
+    },
+    "曼联": {
+      "elo": 1880,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.2,
+      "abbr": "MUN"
+    },
+    "热刺": {
+      "elo": 1860,
+      "avg_goals": 1.8,
+      "avg_conceded": 1.3,
+      "abbr": "TOT"
+    },
+    "伯恩茅斯": {
+      "elo": 1576,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "埃弗顿": {
+      "elo": 1424,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "富勒姆": {
+      "elo": 1379,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "水晶宫": {
+      "elo": 1500,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "考文垂": {
+      "elo": 1624,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "赫尔城": {
+      "elo": 1376,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "伊普斯维奇": {
+      "elo": 1514,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "布莱顿": {
+      "elo": 1500,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "利兹联": {
+      "elo": 1500,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": ""
+    },
+    "布伦特福德": {
+      "elo": 1580,
+      "avg_goals": 1.71,
+      "avg_conceded": 1.29,
+      "abbr": "BRE"
+    },
+    "诺丁汉森林": {
+      "elo": 1510,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.5,
+      "abbr": "NOT"
+    },
+    "桑德兰": {
+      "elo": 1470,
+      "avg_goals": 1.38,
+      "avg_conceded": 1.62,
+      "abbr": "SUN"
+    }
+  },
+  "西甲": {
+    "皇家马德里": {
+      "elo": 2060,
+      "avg_goals": 2.0,
+      "avg_conceded": 0.9,
+      "abbr": "RMA"
+    },
+    "巴塞罗那": {
+      "elo": 2030,
+      "avg_goals": 2.2,
+      "avg_conceded": 1.0,
+      "abbr": "BAR"
+    },
+    "马德里竞技": {
+      "elo": 1940,
+      "avg_goals": 1.6,
+      "avg_conceded": 0.8,
+      "abbr": "ATM"
+    },
+    "毕尔巴鄂竞技": {
+      "elo": 1840,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.0,
+      "abbr": "ATH"
+    },
+    "皇家社会": {
+      "elo": 1830,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.0,
+      "abbr": "RSO"
+    },
+    "比利亚雷亚尔": {
+      "elo": 1820,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.2,
+      "abbr": "VIL"
+    },
+    "塞维利亚": {
+      "elo": 1800,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.2,
+      "abbr": "SEV"
+    },
+    "瓦伦西亚": {
+      "elo": 1760,
+      "avg_goals": 1.2,
+      "avg_conceded": 1.3,
+      "abbr": "VAL"
+    },
+    "莱万特": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "皇家贝蒂斯": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "巴列卡诺": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "西班牙人": {
+      "elo": 1624,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "桑坦德竞技": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "拉科鲁尼亚": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "阿拉维斯": {
+      "elo": 1600,
+      "avg_goals": 1.59,
+      "avg_conceded": 1.11,
+      "abbr": "ALA"
+    },
+    "奥萨苏纳": {
+      "elo": 1540,
+      "avg_goals": 1.43,
+      "avg_conceded": 1.27,
+      "abbr": "OSA"
+    },
+    "赫塔菲": {
+      "elo": 1510,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": "GET"
+    },
+    "塞尔塔": {
+      "elo": 1470,
+      "avg_goals": 1.24,
+      "avg_conceded": 1.46,
+      "abbr": "CEL"
+    },
+    "马拉加": {
+      "elo": 1450,
+      "avg_goals": 1.19,
+      "avg_conceded": 1.51,
+      "abbr": "MAL"
+    },
+    "埃尔切": {
+      "elo": 1430,
+      "avg_goals": 1.13,
+      "avg_conceded": 1.57,
+      "abbr": "ELC"
+    }
+  },
+  "意甲": {
+    "国际米兰": {
+      "elo": 2010,
+      "avg_goals": 1.9,
+      "avg_conceded": 0.8,
+      "abbr": "INT"
+    },
+    "那不勒斯": {
+      "elo": 1980,
+      "avg_goals": 1.8,
+      "avg_conceded": 0.9,
+      "abbr": "NAP"
+    },
+    "尤文图斯": {
+      "elo": 1960,
+      "avg_goals": 1.6,
+      "avg_conceded": 0.8,
+      "abbr": "JUV"
+    },
+    "AC米兰": {
+      "elo": 1940,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.1,
+      "abbr": "MIL"
+    },
+    "亚特兰大": {
+      "elo": 1920,
+      "avg_goals": 2.0,
+      "avg_conceded": 1.1,
+      "abbr": "ATA"
+    },
+    "罗马": {
+      "elo": 1850,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.1,
+      "abbr": "ROM"
+    },
+    "拉齐奥": {
+      "elo": 1840,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.1,
+      "abbr": "LAZ"
+    },
+    "佛罗伦萨": {
+      "elo": 1830,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.2,
+      "abbr": "FIO"
+    },
+    "乌迪内斯": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "帕尔马": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "热那亚": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "萨索洛": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "都灵": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "弗罗西诺内": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "蒙扎": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "科莫": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "摩纳哥": {
+      "elo": 1430,
+      "avg_goals": 1.18,
+      "avg_conceded": 1.62,
+      "abbr": "MON"
+    },
+    "威尼斯": {
+      "elo": 1420,
+      "avg_goals": 1.15,
+      "avg_conceded": 1.65,
+      "abbr": "VEN"
+    },
+    "莱切": {
+      "elo": 1570,
+      "avg_goals": 1.57,
+      "avg_conceded": 1.23,
+      "abbr": "USL"
+    },
+    "卡利亚里": {
+      "elo": 1540,
+      "avg_goals": 1.48,
+      "avg_conceded": 1.32,
+      "abbr": "CAG"
+    },
+    "博洛尼亚": {
+      "elo": 1470,
+      "avg_goals": 1.29,
+      "avg_conceded": 1.51,
+      "abbr": "BOL"
+    }
+  },
+  "德甲": {
+    "拜仁慕尼黑": {
+      "elo": 2080,
+      "avg_goals": 2.5,
+      "avg_conceded": 0.8,
+      "abbr": "BAY"
+    },
+    "勒沃库森": {
+      "elo": 1980,
+      "avg_goals": 2.1,
+      "avg_conceded": 0.9,
+      "abbr": "B04"
+    },
+    "多特蒙德": {
+      "elo": 1920,
+      "avg_goals": 1.9,
+      "avg_conceded": 1.2,
+      "abbr": "BVB"
+    },
+    "莱比锡红牛": {
+      "elo": 1910,
+      "avg_goals": 1.8,
+      "avg_conceded": 1.1,
+      "abbr": "RBL"
+    },
+    "斯图加特": {
+      "elo": 1860,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.2,
+      "abbr": "VFB"
+    },
+    "法兰克福": {
+      "elo": 1840,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.2,
+      "abbr": "SGE"
+    },
+    "沃尔夫斯堡": {
+      "elo": 1790,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.3,
+      "abbr": "WOB"
+    },
+    "门兴格拉德巴赫": {
+      "elo": 1780,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.3,
+      "abbr": "BMG"
+    },
+    "美因茨": {
+      "elo": 1655,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "Köln": {
+      "elo": 1500,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "云达不来梅": {
+      "elo": 1500,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "帕德博恩": {
+      "elo": 1350,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "柏林联合": {
+      "elo": 1800,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "汉堡": {
+      "elo": 1544,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "埃尔沃斯贝格": {
+      "elo": 1800,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "霍芬海姆": {
+      "elo": 1605,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.6,
+      "abbr": ""
+    },
+    "科隆": {
+      "elo": 1590,
+      "avg_goals": 1.86,
+      "avg_conceded": 1.34,
+      "abbr": "KOE"
+    },
+    "奥格斯堡": {
+      "elo": 1590,
+      "avg_goals": 1.86,
+      "avg_conceded": 1.34,
+      "abbr": "FCA"
+    },
+    "弗赖堡": {
+      "elo": 1590,
+      "avg_goals": 1.86,
+      "avg_conceded": 1.34,
+      "abbr": "SCF"
+    },
+    "沙尔克04": {
+      "elo": 1590,
+      "avg_goals": 1.86,
+      "avg_conceded": 1.34,
+      "abbr": "S04"
+    }
+  },
+  "法甲": {
+    "巴黎圣日耳曼": {
+      "elo": 2040,
+      "avg_goals": 2.3,
+      "avg_conceded": 0.8,
+      "abbr": "PSG"
+    },
+    "摩纳哥": {
+      "elo": 1900,
+      "avg_goals": 1.8,
+      "avg_conceded": 1.1,
+      "abbr": "MON"
+    },
+    "马赛": {
+      "elo": 1880,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.1,
+      "abbr": "OM"
+    },
+    "里尔": {
+      "elo": 1860,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.0,
+      "abbr": "LIL"
+    },
+    "里昂": {
+      "elo": 1840,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.2,
+      "abbr": "LYO"
+    },
+    "尼斯": {
+      "elo": 1830,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.1,
+      "abbr": "NIC"
+    },
+    "朗斯": {
+      "elo": 1810,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.1,
+      "abbr": "RCL"
+    },
+    "雷恩": {
+      "elo": 1790,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.2,
+      "abbr": "REN"
+    },
+    "斯特拉斯堡": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "勒阿弗尔": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "洛里昂": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "特鲁瓦": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "布雷斯特": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "图卢兹": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "欧塞尔": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "勒芒": {
+      "elo": 1500,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": ""
+    },
+    "布伦特福德": {
+      "elo": 1540,
+      "avg_goals": 1.54,
+      "avg_conceded": 1.36,
+      "abbr": "BRE"
+    },
+    "昂热": {
+      "elo": 1460,
+      "avg_goals": 1.3,
+      "avg_conceded": 1.59,
+      "abbr": "ANG"
+    },
+    "巴黎FC": {
+      "elo": 1510,
+      "avg_goals": 1.45,
+      "avg_conceded": 1.45,
+      "abbr": "PFC"
+    }
+  }
+}
