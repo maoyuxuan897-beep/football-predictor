@@ -57,8 +57,8 @@ def main():
     print(f"=== 云端自动更新 @ {t0.strftime('%Y-%m-%d %H:%M:%S')} UTC ===")
     key = os.environ.get('FOOTBALL_DATA_KEY', '')
 
-    # 1) 竞彩赔率（海外访问国内接口可能慢/失败 → 非致命）
-    run('fetch_odds.py', fatal=False, note='竞彩赔率（非致命）')
+    # 1) 竞彩赔率（海外访问国内接口大概率被拦截(HTTP 567) → 非致命，无赔率仍出预测看板）
+    run('fetch_odds.py', fatal=False, note='竞彩赔率（海外受限，非致命）')
 
     # 2) 赛程 + 积分榜（核心，必须成功）
     if not key:
@@ -66,12 +66,12 @@ def main():
         sys.exit(1)
     run('fetch_footballdata.py', ['--key', key, '--days', str(args.days)], note='赛程+积分榜')
 
-    # 3) 赔率反推 Elo 校准
-    run('update_elo_from_odds.py', ['--rounds', '3'], note='Elo 校准')
+    # 3) 赔率反推 Elo 校准（无赔率时跳过，非致命）
+    run('update_elo_from_odds.py', ['--rounds', '3'], fatal=False, note='Elo 校准（依赖赔率，可跳过）')
 
-    # 4) 赛果结算 + 回测
+    # 4) 赛果结算 + 回测（非致命）
     run('settle_results.py', ['--key', key], fatal=False, note='赛果结算')
-    run('backtest.py', note='回测统计')
+    run('backtest.py', fatal=False, note='回测统计')
 
     # 5) 预测 + 价值分析 → 看板
     run('run_prediction.py', note='预测+价值+看板')
