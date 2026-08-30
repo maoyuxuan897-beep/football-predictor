@@ -1,0 +1,14 @@
+# 环境与生成物
+.env
+logs/
+__pycache__/
+*.pyc
+
+# 每日生成的数据（由云端/本地流程生成）
+data/fixtures.json
+data/odds.json
+data/prediction_log.json
+data/backtest.json
+
+# 发布产物（GitHub Actions 生成后部署到 gh-pages 分支）
+deploy/index.html
