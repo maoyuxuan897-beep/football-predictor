@@ -1,11 +1,11 @@
 name: 每日更新发布
 
 # 触发方式:
-#   1. 定时: 每天 10:00 北京时间 (UTC 02:00)
+#   1. 定时: 每天 01:30 北京时间 (UTC 17:30) —— 在本地 00:10 推送竞彩赔率之后
 #   2. 手动: 仓库 Actions 页面 → 该 workflow → Run workflow
 on:
   schedule:
-    - cron: '0 2 * * *'
+    - cron: '30 17 * * *'
   workflow_dispatch:
 
 permissions:
