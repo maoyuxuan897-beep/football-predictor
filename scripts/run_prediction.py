@@ -56,6 +56,12 @@ def main():
         with open(odds_path, 'r', encoding='utf-8') as f:
             odds_data = json.load(f)
         odds_map = {(o['date'], o['home'], o['away']): o for o in odds_data.get('odds', [])}
+        # 竞彩常用简称 → 系统全名 的匹配辅助（如 维拉 ↔ 阿斯顿维拉）
+        def name_match(a, b):
+            if a == b:
+                return True
+            # 竞彩用简称：一方包含另一方且不引起歧义（长度≥2 的包含）
+            return (len(a) >= 2 and len(b) >= 2) and (a in b or b in a)
         for p in predictions:
             if 'error' in p:
                 continue
@@ -64,7 +70,7 @@ def main():
                 # 尝试按队名+日期模糊匹配（时间可能有分钟差）
                 o = None
                 for (d, h, a), v in odds_map.items():
-                    if d == p['date'] and h == p['home'] and a == p['away']:
+                    if d == p['date'] and name_match(h, p['home']) and name_match(a, p['away']):
                         o = v
                         break
             if o:
