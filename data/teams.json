@@ -608,5 +608,223 @@
       "avg_conceded": 1.45,
       "abbr": "PFC"
     }
+  },
+  "欧冠": {
+    "阿斯顿维拉": {
+      "elo": 1890,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.2,
+      "abbr": "AVL"
+    },
+    "皇家马德里": {
+      "elo": 2060,
+      "avg_goals": 2.0,
+      "avg_conceded": 0.9,
+      "abbr": "RMA"
+    },
+    "国际米兰": {
+      "elo": 2010,
+      "avg_goals": 1.9,
+      "avg_conceded": 0.8,
+      "abbr": "INT"
+    },
+    "曼城": {
+      "elo": 2050,
+      "avg_goals": 2.1,
+      "avg_conceded": 0.9,
+      "abbr": "MCI"
+    },
+    "多特蒙德": {
+      "elo": 1920,
+      "avg_goals": 1.9,
+      "avg_conceded": 1.2,
+      "abbr": "BVB"
+    },
+    "比利亚雷亚尔": {
+      "elo": 1820,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.2,
+      "abbr": "VIL"
+    },
+    "里尔": {
+      "elo": 1860,
+      "avg_goals": 1.6,
+      "avg_conceded": 1.0,
+      "abbr": "LIL"
+    },
+    "皇家贝蒂斯": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "巴塞罗那": {
+      "elo": 2030,
+      "avg_goals": 2.2,
+      "avg_conceded": 1.0,
+      "abbr": "BAR"
+    },
+    "斯图加特": {
+      "elo": 1860,
+      "avg_goals": 1.7,
+      "avg_conceded": 1.2,
+      "abbr": "VFB"
+    },
+    "利物浦": {
+      "elo": 2010,
+      "avg_goals": 2.0,
+      "avg_conceded": 0.9,
+      "abbr": "LIV"
+    },
+    "马德里竞技": {
+      "elo": 1940,
+      "avg_goals": 1.6,
+      "avg_conceded": 0.8,
+      "abbr": "ATM"
+    },
+    "巴黎圣日耳曼": {
+      "elo": 2040,
+      "avg_goals": 2.3,
+      "avg_conceded": 0.8,
+      "abbr": "PSG"
+    },
+    "那不勒斯": {
+      "elo": 1980,
+      "avg_goals": 1.8,
+      "avg_conceded": 0.9,
+      "abbr": "NAP"
+    },
+    "阿森纳": {
+      "elo": 2020,
+      "avg_goals": 2.0,
+      "avg_conceded": 0.8,
+      "abbr": "ARS"
+    },
+    "罗马": {
+      "elo": 1850,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.1,
+      "abbr": "ROM"
+    },
+    "拜仁慕尼黑": {
+      "elo": 2080,
+      "avg_goals": 2.5,
+      "avg_conceded": 0.8,
+      "abbr": "BAY"
+    },
+    "曼联": {
+      "elo": 1880,
+      "avg_goals": 1.5,
+      "avg_conceded": 1.2,
+      "abbr": "MUN"
+    },
+    "科莫": {
+      "elo": 1500,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.4,
+      "abbr": ""
+    },
+    "莱比锡红牛": {
+      "elo": 1910,
+      "avg_goals": 1.8,
+      "avg_conceded": 1.1,
+      "abbr": "RBL"
+    },
+    "朗斯": {
+      "elo": 1810,
+      "avg_goals": 1.4,
+      "avg_conceded": 1.1,
+      "abbr": "RCL"
+    },
+    "Club Brugge KV": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "PAE AEK": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "LASK Linz": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "FC Porto": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "Feyenoord Rotterdam": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "Viking FK": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "ŠK Slovan Bratislava": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "Sporting Clube de Portugal": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "Galatasaray SK": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "Fenerbahçe SK": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "PSV": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "FK Shakhtar Donetsk": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "FK Bodø/Glimt": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "Sabah FK": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    },
+    "SK Slavia Praha": {
+      "elo": 1500,
+      "avg_goals": 1.35,
+      "avg_conceded": 1.35,
+      "abbr": ""
+    }
   }
 }
