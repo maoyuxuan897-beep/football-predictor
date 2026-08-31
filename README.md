@@ -76,7 +76,7 @@ python scripts/auto_update.py --days 7
 # 流程: 竞彩赔率 → football-data 赛程+积分榜 → 赔率反推 Elo → 预测+价值 → 看板
 ```
 
-**Windows 每日定时**：双击 `scripts/setup_scheduled_task.bat` 注册每日 09:30 任务。
+**Windows 每日定时**：双击 `scripts/setup_scheduled_task.bat` 注册每日 00:00 任务。
 **WorkBuddy 自动化**：配置每日任务运行上述命令并汇报价值信号。
 
 ### 单独操作
