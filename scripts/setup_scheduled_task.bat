@@ -2,7 +2,7 @@
 chcp 65001 >nul
 REM ============================================
 REM 五大联赛预测系统 · Windows 每日自动更新
-REM 用法: 双击运行一次即可注册每日 09:30 自动任务
+REM 用法: 双击运行一次即可注册每日 00:00 自动任务
 REM 日志: logs\auto_update.log
 REM ============================================
 
@@ -22,7 +22,7 @@ if not exist "%PYTHON%" (
 
 echo [2/3] 注册计划任务 %TASK_NAME% ...
 schtasks /Create /F /TN "%TASK_NAME%" ^
-  /SC DAILY /ST 09:30 ^
+  /SC DAILY /ST 00:00 ^
   /TR "cmd /c \"%PYTHON%\" \"%BASE%\scripts\auto_update.py\" --days 7 >> \"%BASE%\logs\auto_update.log\" 2>&1"
 
 if errorlevel 1 (
@@ -36,7 +36,7 @@ if not exist "%BASE%\logs" mkdir "%BASE%\logs"
 "%PYTHON%" "%BASE%\scripts\auto_update.py" --days 7 >> "%BASE%\logs\auto_update.log" 2>&1
 
 echo.
-echo ✅ 已完成！每日 09:30 将自动: 拉取真实赛程 → 计算预测 → 更新看板
+echo ✅ 已完成！每日 00:00 将自动: 拉取真实赛程 → 计算预测 → 更新看板
 echo    查看任务: schtasks /Query /TN "%TASK_NAME%"
 echo    查看日志: %BASE%\logs\auto_update.log
 echo    提示: 在系统环境变量中设置 FOOTBALL_DATA_KEY 后即可拉取真实赛程
