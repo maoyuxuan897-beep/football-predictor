@@ -67,7 +67,7 @@ def setup_logging():
     return f
 
 
-def run(script, extra=None):
+def run(script, extra=None, fatal=True):
     cmd = [PY, os.path.join(BASE, 'scripts', script)]
     if extra:
         cmd += extra
@@ -76,13 +76,15 @@ def run(script, extra=None):
     env = dict(os.environ)
     env['PYTHONIOENCODING'] = 'utf-8'
     r = subprocess.run(cmd, cwd=BASE, capture_output=True, text=True,
-                       encoding='utf-8', errors='replace', env=env)
+                       encoding='utf-8', errors='replace', env=env, timeout=240)
     if r.stdout:
         print(r.stdout, end='')
     if r.stderr:
         print(r.stderr, end='', file=sys.stderr)
     if r.returncode != 0:
         print(f"⚠ 步骤失败: {script} (exit={r.returncode})")
+        if fatal:
+            sys.exit(r.returncode)
     return r.returncode
 
 
@@ -97,8 +99,9 @@ def main():
     t0 = datetime.now()
     print(f"=== 五大联赛预测系统自动更新 @ {t0.strftime('%Y-%m-%d %H:%M:%S')} ===")
 
-    # 1) 竞彩赔率（免费，无 key）
+    # 1) 竞彩赔率（免费，无 key）→ 推送到 GitHub 供云端价值分析
     run('fetch_odds.py')
+    run('push_odds_to_github.py', fatal=False) if os.path.exists(os.path.join(BASE, 'scripts', 'push_odds_to_github.py')) else None
 
     # 2) 真实赛程 + 积分榜
     key = args.key or load_key()
