@@ -4,6 +4,9 @@ logs/
 __pycache__/
 *.pyc
 
+# WorkBuddy 项目内部数据（含自动化记忆，勿上传公开仓库）
+.workbuddy/
+
 # 每日生成的数据（由云端/本地流程生成）
 data/fixtures.json
 data/odds.json
