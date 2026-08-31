@@ -94,6 +94,17 @@ for rel in files:
             ok = True
             break
         except urllib.error.HTTPError as e:
+            if e.code == 422:
+                # 更新已存在文件缺少/过期 sha：重新获取后重试一次
+                new_sha = get_file_sha(url)
+                if new_sha:
+                    body['sha'] = new_sha
+                    req = urllib.request.Request(url, data=json.dumps(body).encode(),
+                                                 headers={"Authorization": f"token {TOKEN}",
+                                                          "Accept": "application/vnd.github+json",
+                                                          "Content-Type": "application/json"},
+                                                 method="PUT")
+                    continue
             msg = e.read().decode('utf-8', 'ignore')[:150]
             failed.append((rel, f"HTTP {e.code}: {msg}"))
             print(f"  ✗ {rel}: HTTP {e.code}")
