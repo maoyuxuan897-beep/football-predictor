@@ -148,6 +148,51 @@ def stat_from_rank(rank, league_avg):
     }
 
 
+def ensure_league_teams(teams, fixtures, leagues_cfg):
+    """从赛程补齐无积分榜赛事（欧冠）的球队数据。
+    优先跨联赛继承同名球队的 Elo/攻防（如拜仁在德甲有数据），否则给联赛均值默认。
+    返回新增球队数。
+    """
+    added = 0
+    # 建立 中文名 -> 已有球队数据 的跨联赛索引（取 Elo 最高者）
+    inherit_index = {}
+    for lg, tmap in teams.items():
+        for zh, info in tmap.items():
+            if zh in inherit_index:
+                if info.get('elo', 0) > inherit_index[zh].get('elo', 0):
+                    inherit_index[zh] = info
+            else:
+                inherit_index[zh] = info
+    for f in fixtures:
+        league = f.get('league', '')
+        if league not in leagues_cfg:
+            continue
+        if league not in teams:
+            teams[league] = {}
+        for side in ('home', 'away'):
+            zh = f.get(side)
+            if not zh or zh in teams[league]:
+                continue
+            src = inherit_index.get(zh)
+            if src:
+                teams[league][zh] = {
+                    'elo': src.get('elo', 1500),
+                    'avg_goals': src.get('avg_goals', 1.4),
+                    'avg_conceded': src.get('avg_conceded', 1.4),
+                    'abbr': src.get('abbr', '')
+                }
+            else:
+                avg = leagues_cfg[league].get('avg_goals', 1.45)
+                teams[league][zh] = {
+                    'elo': 1500,  # 未知实力：中性基线，由赔率校准迭代修正
+                    'avg_goals': avg,
+                    'avg_conceded': avg,
+                    'abbr': ''
+                }
+            added += 1
+    return added
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument('--key', default=os.environ.get('FOOTBALL_DATA_KEY', ''))
@@ -174,7 +219,8 @@ def main():
     zh_by_tla, zh_by_en = build_name_maps(data_dir)
 
     today = datetime.now()
-    date_from = today.strftime('%Y-%m-%d')
+    # football-data 按 UTC 日期过滤；北京凌晨(0-8点)的比赛属 UTC 前一天，往前多拉一天避免漏场
+    date_from = (datetime.utcnow() - timedelta(days=1)).strftime('%Y-%m-%d')
 
     print(f"⚽ 开始拉取 football-data.org 真实数据（欧冠/英超/西甲/德甲）")
     new_fixtures = []
@@ -258,11 +304,20 @@ def main():
         save_json(fixtures_path, fixtures_data)
         print(f"\n📅 赛程已更新: {len(new_fixtures)} 场 → {os.path.abspath(fixtures_path)}")
 
+    # 从赛程补齐无积分榜赛事（欧冠）的球队数据，保证预测引擎可运行
+    if args.only in ('all', 'fixtures') and new_fixtures:
+        added = ensure_league_teams(teams, new_fixtures, leagues_cfg)
+        if added:
+            save_json(teams_path, teams)
+            print(f"🏟 欧冠球队补齐: 新增 {added} 支（跨联赛继承/默认基线）")
+
     # 写回球队（含英文残留清理：未翻译的官方名键删除，中文键已在上面建立）
     if args.only in ('all', 'teams'):
         import re
         removed = 0
         for league in teams:
+            if league == '欧冠':
+                continue  # 杯赛无积分榜，队名可保留英文（如 Club Brugge KV）
             for tname in list(teams[league].keys()):
                 if re.search(r'[a-zA-Z]{3,}', tname):
                     del teams[league][tname]
